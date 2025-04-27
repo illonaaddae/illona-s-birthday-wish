@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="I am a  Software Engineer with a passion for leveraging technology to create positive impact. I have honed my skills in building efficient and user-friendly web applications with proven expertise in UI/UX design, digital marketing & e-commerce, front-end development (HTML, CSS, JavaScript, SASS, React), and back-end development (Node.js, Python, PHP, MongoDB, SQL).  "
+    />
+    <title>IllonaSpace | Beyond Limits</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="icon" type="image/png" href="fav/favicon.ico" />
+    <link rel="manifest" href="fav/manifest.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+      <p>☁️ Launching Illona’s Space...✨🚀</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" class="hidden">
+      <!-- Welcome Section -->
+      <section class="welcome">
+        <h1>Welcome to IllonaSpace</h1>
+        <p>
+          👩‍💻 Beyond limits, beyond stars, she builds a future only she can
+          imagine. 🚀✨
+        </p>
+        <img src="illona-2.jpg" alt="Illona Addae" class="profile-pic" />
+      </section>
+
+      <!-- About Section -->
+      <section class="about">
+        <h2>About Illona</h2>
+        <p>
+          Illona Addae is an aspiring software engineer, diversity advocate, and
+          mentor committed to empowering women and underrepresented communities
+          through technology. Based in Ghana, she is passionate about mastering
+          front-end and back-end development with React, Node.js, MongoDB, and
+          Python, alongside exploring AI, Machine Learning, and Robotics.
+        </p>
+      </section>
+
+      <!-- Mission Section -->
+      <section class="mission">
+        <h2>Mission & Dreams</h2>
+        <p>
+          Illona’s mission is to challenge the status quo, bridging gender gaps
+          in technology and creating ethical AI solutions that benefit society.
+          With a background shaped by perseverance, she dreams of contributing
+          to Robotics and AI innovations for real-world impact.
+        </p>
+      </section>
+
+      <!-- Hidden Birthday Poem -->
+      <section class="poem">
+        <h2>A Birthday Wish</h2>
+        <img src="illona-ani.png" alt="Illona Addae" class="profile-pic" />
+        <p>
+          👩‍💻In a world of ‘can’t’s, She whispered ‘I can’, and in doing so, she
+          became an unstoppable force — And her story is only just beginning. ✨
+        </p>
+      </section>
+
+      <!-- Send a Gift Section -->
+      <section class="gift">
+        <div class="gift-card">
+          <h2>Support My Dream</h2>
+          <p>
+            Thank you for being part of my journey! If you would like to support
+            my dreams and future adventures, feel free to send a small gift.
+            Your kindness fuels my ambition beyond limits.
+          </p>
+          <a href="https://buymeacoffee.com/gliy8vpa7m" class="gift-button"
+            >Send a Gift</a
+          >
+          <!-- Replace #gift with your real payment link later -->
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Built with love by Illona Addae ✨</p>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Show loader then reveal site
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").classList.remove("hidden");
+        }, 2000); // 2 seconds loader
+      });
+    </script>
+  </body>
+</html>
