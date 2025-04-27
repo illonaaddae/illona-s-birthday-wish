@@ -90,7 +90,7 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
+input[type="text"],
 textarea {
   width: 80%;
   height: 150px;
@@ -102,6 +102,10 @@ textarea {
   background-color: #0b0c2a;
   color: white;
   resize: none;
+}
+
+.birthday-message input[type="text"] {
+  height: 50px;
 }
 
 .submit-message {
