@@ -26,6 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  animation: flicker 2s infinite alternate;
 }
 
 /* Hidden Content Initially */
@@ -73,9 +74,62 @@ h2 {
   font-size: 1rem;
 }
 
+/* Birthday message */
+.birthday-message {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.birthday-message h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 80%;
+  height: 150px;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: #0b0c2a;
+  color: white;
+  resize: none;
+}
+
+.submit-message {
+  background-color: #7b4dfd;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-message:hover {
+  background-color: #5f38d4;
+}
+
 /* Gift Section */
 .gift {
   margin-top: 3rem;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .gift-card {
@@ -115,4 +169,22 @@ h2 {
   font-size: 0.9rem;
   color: #8e8eff;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .birthday-message {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
